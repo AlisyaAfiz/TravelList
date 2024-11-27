@@ -4,7 +4,7 @@ export default function Stats({items}) {
     const percentage = Math.round((packedItems/totalItems)*100)
     return (
       <footer className="stats">
-        <em>
+        <em style={{fontSize: 27}}>
           { percentage === 100 ? "You got everything!" : `You have ${totalItems} items in the list. You already packed ${packedItems} (${percentage}%).`}
           </em>
       </footer>

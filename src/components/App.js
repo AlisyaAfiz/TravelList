@@ -25,7 +25,8 @@ function App() {
   function handleDeleteItem(id) {
     if (id === undefined) {
       setItems([]);
-    } else {setItems((prevItems) => prevItems.filter((item) => item.id !== id));
+    } else {
+      setItems((prevItems) => prevItems.filter((item) => item.id !== id));
     }
   }
   function handleFavorites(itemId) {
