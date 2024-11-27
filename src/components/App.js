@@ -36,7 +36,7 @@ function App() {
       )
     );
   }
-  const sortedItems = [...items].sort((top, bottom) => bottom.favorite - top.favorite);
+  const sortedItems = [...items].sort((a, b) => b.favorite - a.favorite);
   return (
     <div className="app">
       <Logo />
